@@ -7,12 +7,12 @@
 #
 .utmp/
 /SoulBound/[Ll]ibrary/
-/SoulBound//[Tt]emp/
-/SoulBound//[Oo]bj/
-/SoulBound//[Bb]uild/
-/SoulBound//[Bb]uilds/
-/SoulBound//[Ll]ogs/
-/SoulBound//[Uu]ser[Ss]ettings/
+/SoulBound/[Tt]emp/
+/SoulBound/[Oo]bj/
+/SoulBound/[Bb]uild/
+/SoulBound/[Bb]uilds/
+/SoulBound/[Ll]ogs/
+/SoulBound/[Uu]ser[Ss]ettings/
 *.log
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
