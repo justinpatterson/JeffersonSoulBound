@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
     public enum GameStates 
     {
         Launch = 0,
-        MainMenu = 1
+        MainMenu = 1,
+        Overworld = 2
     }
     public GameStates activeState = GameStates.Launch;
 
@@ -26,8 +27,13 @@ public class GameManager : MonoBehaviour
     {
         if(SceneManager.instance != null) 
         {
-            SceneManager.instance.LoadSceneTarget();
-            activeState = GameStates.MainMenu;
+            GameTransition(GameStates.MainMenu);
         }
+    }
+
+    public void GameTransition(GameStates nextState) 
+    {
+        SceneManager.instance.LoadSceneTarget((int)nextState);
+        activeState = nextState;
     }
 }

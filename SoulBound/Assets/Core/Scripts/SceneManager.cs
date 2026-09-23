@@ -14,8 +14,9 @@ public class SceneManager : MonoBehaviour
             Destroy(this.gameObject);
     }
 
-    public void LoadSceneTarget()  //LoadSceneTarget( targetScene );
+    public void LoadSceneTarget(int index = 1)  //LoadSceneTarget( targetScene );
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(1, UnityEngine.SceneManagement.LoadSceneMode.Additive);
+        //TODO: Unload any previous addidive scenes, probs
+        UnityEngine.SceneManagement.SceneManager.LoadScene(index, UnityEngine.SceneManagement.LoadSceneMode.Additive);
     }
 }
