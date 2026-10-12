@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     public string animatorSpeedParameterName;
     public string animatorDirectionParameterName = "Direction";
 
+    public int lastDir = 0;
+
     private void Awake()
     {
 
@@ -58,9 +60,13 @@ public class PlayerController : MonoBehaviour
         {
             //left or right
             dir = (moveInput.x > 0) ? 1 : 3;
-        } 
+        }
+        lastDir = dir;
+
         animatorReference.SetInteger(animatorDirectionParameterName, dir);
         animatorReference.SetFloat(animatorSpeedParameterName, moveInput.magnitude > 0.1f ? 1f: 0f);
+
+
     }
 
 
@@ -71,6 +77,6 @@ public class PlayerController : MonoBehaviour
         if (useLinearVelocity == false)
             rb.MovePosition(rb.position + _lastDesiredInput);
         else if (useLinearVelocity == true)
-            rb.linearVelocity = (_lastMoveInput * speed);
+            rb.linearVelocity = Vector3.Lerp(rb.linearVelocity, _lastMoveInput*speed, Time.deltaTime*10f);
     }
 }
