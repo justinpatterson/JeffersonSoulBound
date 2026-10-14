@@ -8,7 +8,8 @@ public class GameManager : MonoBehaviour
     {
         Launch = 0,
         MainMenu = 1,
-        Overworld = 2
+        Overworld = 2,
+        Combat = 3
     }
     public GameStates activeState = GameStates.Launch;
 

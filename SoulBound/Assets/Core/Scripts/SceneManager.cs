@@ -22,7 +22,7 @@ public class SceneManager : MonoBehaviour
         //TODO: Unload any previous addidive scenes, probs
         if(_lastScene != -1 && _lastScene != 0) 
         {
-            UnityEngine.SceneManagement.SceneManager.UnloadScene(_lastScene);
+            UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(_lastScene);
             _lastScene = -1;
         }
 
