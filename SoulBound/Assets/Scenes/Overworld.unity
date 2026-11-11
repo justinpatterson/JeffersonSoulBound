@@ -248,7 +248,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &915551587
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -324,6 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCBehavior
   NPCIdentifier: Frumpy Enemy #3
+  speed: 2
 --- !u!1 &1021376545
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,6 +986,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24bd25144539ac941af7f554b881d9e8, type: 3}
+--- !u!1001 &2362082778624781852
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1398037027002421017, guid: e92cdc9ace2300648a4060c705b7477f, type: 3}
+      propertyPath: followTarget
+      value: 
+      objectReference: {fileID: 1073925655}
+    - target: {fileID: 2668773479167850085, guid: e92cdc9ace2300648a4060c705b7477f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.06672
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668773479167850085, guid: e92cdc9ace2300648a4060c705b7477f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668773479167850085, guid: e92cdc9ace2300648a4060c705b7477f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.01185
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668773479167850085, guid: e92cdc9ace2300648a4060c705b7477f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668773479167850085, guid: e92cdc9ace2300648a4060c705b7477f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668773479167850085, guid: e92cdc9ace2300648a4060c705b7477f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668773479167850085, guid: e92cdc9ace2300648a4060c705b7477f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668773479167850085, guid: e92cdc9ace2300648a4060c705b7477f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668773479167850085, guid: e92cdc9ace2300648a4060c705b7477f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668773479167850085, guid: e92cdc9ace2300648a4060c705b7477f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055253433406076929, guid: e92cdc9ace2300648a4060c705b7477f, type: 3}
+      propertyPath: m_Name
+      value: PF_RazielFollowNPC
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e92cdc9ace2300648a4060c705b7477f, type: 3}
 --- !u!1001 &3393144317183300448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1098,3 +1160,4 @@ SceneRoots:
   - {fileID: 756823214}
   - {fileID: 1624495902}
   - {fileID: 915551588}
+  - {fileID: 2362082778624781852}

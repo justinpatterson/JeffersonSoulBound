@@ -79,9 +79,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -818161181, guid: 2d243bc07184e584ba6938ae14327621, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aacb0d4a06638f84597ff2e74802af9d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -198,7 +198,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.05, y: 0.05}
+  m_Size: {x: 0.1, y: 0.15}
   m_EdgeRadius: 0
 --- !u!114 &7978846870375902794
 MonoBehaviour:
@@ -218,6 +218,8 @@ MonoBehaviour:
   speed: 0.5
   animatorReference: {fileID: 5207777527008491588}
   animatorSpeedParameterName: Speed
+  animatorDirectionParameterName: Direction
+  lastDir: 0
 --- !u!95 &5207777527008491588
 Animator:
   serializedVersion: 7
