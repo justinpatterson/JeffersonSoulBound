@@ -4,6 +4,6 @@ public class OverworldController : MonoBehaviour
 {
     public void ExitRoom() 
     {
-        GameManager.instance.GameTransition(GameManager.GameStates.MainMenu);
+        GameManager.instance.GameTransition(GameManager.GameStates.Combat);
     }
 }
